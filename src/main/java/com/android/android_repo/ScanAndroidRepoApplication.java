@@ -52,6 +52,7 @@ public class ScanAndroidRepoApplication extends SpringBootServletInitializer imp
 
         if(list.size() > 0){
             for(IMEI imei:list){
+
                 System.out.println("IMEI : "+imei.getValue());
             }
         }
