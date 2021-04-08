@@ -45,9 +45,7 @@ public class ScanAndroidRepoApplication extends SpringBootServletInitializer imp
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Try to get IMEIs... ");
-        //IMEI im=new IMEI("353948119627866","353948119627866", "Safa", "Mnassri",new Date());
-        //imeiRepo.save(im);
-        Email email=new Email(25, "smtp.gmail.com", "salimamnassri@gmail.com", "123654789");
+        Email email=new Email(25, "smtp.gmail.com", "salimamnassri@gmail.com", "");
         emailRepository.save(email);
 
         List<IMEI> list=imeiRepo.findAll();
