@@ -96,7 +96,8 @@ public class IMEIController {
     @GetMapping("/getImeiById/{id}")
     public IMEI getImeiById(@PathVariable Integer id){
         try{
-            return imeiRepository.getOne(id);
+            //return imeiRepository.getOne(id);
+            return imeiRepository.findById(id).get();
         }catch (Exception e){
             return new IMEI();
         }

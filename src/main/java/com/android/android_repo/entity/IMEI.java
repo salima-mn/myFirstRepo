@@ -24,13 +24,8 @@ public class IMEI implements Serializable {
     private String password;
     private String name;
     private String surname;
+    private String email;
+    private int status;
     private String expired_token;
 
-    public IMEI(String value, String password, String name, String surname, String expired_token) {
-        this.value = value;
-        this.password = password;
-        this.name = name;
-        this.surname = surname;
-        this.expired_token = expired_token;
-    }
 }
